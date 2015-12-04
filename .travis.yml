@@ -58,3 +58,7 @@ before_script:
   - "mysql -e 'CREATE DATABASE pymysqlreplication_test;'"
 script:
   - "nosetests"
+
+notifications:
+  email: 
+    varsha@shippable.com

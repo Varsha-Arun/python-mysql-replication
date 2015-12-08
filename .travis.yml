@@ -5,10 +5,11 @@ python:
   - "3.3"
   - "3.4"
   - "pypy"
+build_image: drydock/u14pytpls:prod
 install:
     - "pip install ."
     - "pip install nose"
-cache: apt
+#cache: apt
 before_script:
   # Remove old mysql version
   - "sudo /etc/init.d/mysql stop || true"   

@@ -39,7 +39,7 @@ before_script:
   - "sudo /etc/init.d/mysql stop || true" 
 
   # Install new datas
-  - "sudo mysql_install_db --defaults-file=/etc/mysql/my.cnf --basedir=/usr --datadir=/var/ramfs/mysql --verbose"
+#  - "sudo mysql_install_db --defaults-file=/etc/mysql/my.cnf --basedir=/usr --datadir=/var/ramfs/mysql --verbose"
 
   # Enable GTID
   - "echo '[mysqld]'                       | sudo tee /etc/mysql/conf.d/gtid.cnf"

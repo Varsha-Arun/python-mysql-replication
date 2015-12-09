@@ -26,9 +26,9 @@ before_script:
  # - "sudo env DEBIAN_FRONTEND=noninteractive apt-get install -o Dpkg::Options::='--force-confold' -q -y mysql-server"
 
   # Cleanup old mysql datas
-  - "sudo rm -rf /var/ramfs/mysql/"
-  - "sudo mkdir /var/ramfs/mysql/"
-  - "sudo chown mysql: /var/ramfs/mysql/"
+#  - "sudo rm -rf /var/ramfs/mysql/"
+ # - "sudo mkdir /var/ramfs/mysql/"
+  #- "sudo chown mysql: /var/ramfs/mysql/"
 
   # Config
   - "echo '[mysqld]'            | sudo tee /etc/mysql/conf.d/replication.cnf"

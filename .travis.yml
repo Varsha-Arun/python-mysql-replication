@@ -23,7 +23,7 @@ before_script:
   - "echo deb http://repo.mysql.com/apt/ubuntu/ precise mysql-5.6 | sudo tee /etc/apt/sources.list.d/mysql.list"
   - "sudo apt-key add .mysql/dev.mysql.com.gpg.key"
   - "sudo apt-get update"
-  - "sudo env DEBIAN_FRONTEND=noninteractive apt-get install -o Dpkg::Options::='--force-confold' -q -y mysql-server"
+ # - "sudo env DEBIAN_FRONTEND=noninteractive apt-get install -o Dpkg::Options::='--force-confold' -q -y mysql-server"
 
   # Cleanup old mysql datas
   - "sudo rm -rf /var/ramfs/mysql/"

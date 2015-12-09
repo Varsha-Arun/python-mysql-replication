@@ -50,7 +50,7 @@ before_script:
 
   # Start mysql (avoid errors to have logs)
   - "sudo /etc/init.d/mysql start || true"
-  - "sudo tail -1000 /var/log/syslog"
+ # - "sudo tail -1000 /var/log/syslog"
 
   - "mysql --version"
   - "mysql -e 'SELECT VERSION();'"
